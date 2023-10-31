@@ -38,3 +38,19 @@ skillsSortItems.forEach((item) => {
     }
   });
 });
+
+//match
+const matchElements = document.querySelectorAll('.match');
+
+matchElements.forEach((match, index) => {
+  match.addEventListener('mouseover', (e) => {
+    e.preventDefault();
+    match.classList.toggle('active');
+
+    matchElements.forEach((other, otherIndex) => {
+      if (otherIndex !== index) {
+        other.classList.remove('active');
+      }
+    });
+  });
+});

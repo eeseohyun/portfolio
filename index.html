@@ -153,16 +153,16 @@
         <div class="box inside">
           <div class="front">
             <div role='button' class="match" style="--clr:#11B981; --i:4;">
-              <a href="#Mountaineer">Mountaineer</a>
+              <p>Mountaineer</p>
             </div>
             <div role='button' class="match" style="--clr:#F8BF52; --i:3;">
-              <a href="#DangGeuneDaong">DangGeuneDaong</a>
+              <p>DangGeuneDaong</p>
             </div>
             <div role='button' class="match" style="--clr:#90DCE1; --i:2;">
-              <a href="#TWT">TWT-TravelWithoutTrouble</a>
+              <p>TWT-TravelWithoutTrouble</p>
             </div>
             <div role='button' class="match" style="--clr:#2982b9; --i:1;">
-              <a href="#ToyBlock">ToyBlock</a>
+              <p>DevBlock</p>
             </div>
           </div>
 
@@ -177,35 +177,161 @@
     </div>
   </section>
 
-  
-  <div class="modal Mountaineer" id="#Mountaineer">
-    <article class="modal-container" style="--clr:#11B981;">
-      <header class="modal-container-header">
-        <h1 class="modal-container-title">
-          <!-- img -->
-          Mountaineer
-        </h1>
-        <button class="close-button">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-            <path fill="none" d="M0 0h24v24H0z" />
-            <path fill="currentColor" d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
-          </svg>
-        </button>
-      </header>
-      <section class="modal-container-body rtf">
-        <h2></h2>
-        <p></p>
-        <h3></h3>
-        <p></p>
-      </section>
-      <footer class="modal-container-footer">
-        <button>Github</button>
-        <button>Site</button>
-      </footer>
-    </article>
+  <!-- Portfolio Modal -->
+  <div class="modal_wrapper Mountaineer" id="#Mountaineer">
+    <div class="modal">
+      <div class="modal_head" style="--clr:#11B981;">
+        <a class="btn-close trigger" href="#">
+          <p aria-hidden="true">X</p></a>
+        <h1>Mountaineer</h1>
+      </div>
+      <div class="image_slider">
+        <div class="images"></div>
+        <div class="thumbnails"></div>
+        <div class="back-btn">
+          〈
+        </div>
+        <div class="next-btn">
+          〉
+        </div>
+      </div>
+      <div class="modal_content">
+        <img src="img/mountaineer1.png" alt="">
+        <h4>개인 프로젝트(4주) 2023.04</h4>
+        <p>등산을 사랑하는 이들이 모여 산악지식과 산행 경험을 공유하고, 함께 성장하고 소통하는 등산 커뮤니티 플랫폼입니다. 또한 다양한 산악회나 등산 그룹에 참여하여 멤버들과 함께 산행 일정을 계획하고 소통할 수도 있습니다.
+          </p>
+          <p>기존 순수 Javascript로 제작한 것과는 다르게 React와 Typescript를 사용하여 체계적으로 Component 및 State를 관리하고, 수정할 수 있도록 하였습니다.</p>
+          <p>Firebase(Authentication, Realtime Database) 서비스를 처음 사용해보았고, 최근 인기가 많은 TailwindCSS를 통해 유용성을 느낄 수 있었습니다. </p>
+          <h3>주요 기능</h3>
+          <p>
+            <li>지역별 및 모집여부 별 게시물 조회</li>
+            <li>게시물 업로드 및 검색</li>
+            <li>댓글 CRUD</li>
+            <li>나의 게시물과 참여한 산악회 조회</li>
+          </p>
+     
+        <div class="links">
+          <a href=""><i class="fa-brands fa-github"></i> Github</a>
+          <a href=""><i class="fa-solid fa-link"></i>Site</a>
+        </div>
+    </div>
+    </div>
   </div>
 
-  <section class="#DangGeuneDaong"></section>
+  <div class="modal_wrapper DangGeuneDaong" id="#DangGeuneDaong">
+    <div class="modal">
+      <div class="modal_head" style="--clr:#F8BF52;">
+        <a class="btn-close trigger" href="#">
+          <p aria-hidden="true">X</p></a>
+        <h1>DangGeuneDaong</h1>
+      </div>
+      <div class="image_slider">
+        <div class="images"></div>
+        <div class="thumbnails"></div>
+        <div class="back-btn">
+          〈
+        </div>
+        <div class="next-btn">
+          〉
+        </div>
+      </div>
+      <div class="modal_content">
+        <h4>팀 프로젝트 2023.06(6주)</h4>
+        <p>반려동물 시장의 확대와 무분별한 구매 및 낭비 사이에서 발생하는 문제를 해결하기 위해 반려동물 중고 물품 거래 및 나눔 플랫폼을 고안하게 되었습니다.</p>
+        <p>기존 순수 Javascript로 제작한 것과는 다르게 React와 Typescript를 사용하여 체계적으로 Component 및 State를 관리하고, 수정할 수 있도록 하였습니다.</p>
+        <p>Firebase(Authentication, Realtime Database) 서비스를 처음 사용해보았고, 최근 인기가 많은 TailwindCSS를 통해 유용성을 느낄 수 있었습니다. </p>
+        <h3>주요 기능</h3>
+        <p>
+          <li>지역별 및 모집여부 별 게시물 조회</li>
+          <li>게시물 업로드 및 검색</li>
+          <li>댓글 CRUD</li>
+          <li>나의 게시물과 참여한 산악회 조회</li>
+        </p>
+    
+        <div class="links">
+          <a href="https://github.com/eeseohyun/Frontend"><i class="fa-brands fa-github"></i> Github</a>
+          <a href=""><i class="fa-solid fa-link"></i>Site</a>
+        </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="modal_wrapper TWT" id="#TWT">
+    <div class="modal">
+      <div class="modal_head" style="--clr:#90DCE1;">
+        <a class="btn-close trigger" href="#">
+          <p aria-hidden="true">X</p></a>
+        <h1>TWT-TravelWithoutTrouble</h1>
+      </div>
+      <div class="image_slider">
+        <div class="images"></div>
+        <div class="thumbnails"></div>
+        <div class="back-btn">
+          〈
+        </div>
+        <div class="next-btn">
+          〉
+        </div>
+      </div>
+      <div class="modal_content">
+        <h3>팀 프로젝트 2023.07(18주)</h3>
+        <p>반려동물 시장의 확대와 무분별한 구매 및 낭비 사이에서 발생하는 문제를 해결하기 위해 반려동물 중고 물품 거래 및 나눔 플랫폼을 고안하게 되었습니다.</p>
+        <p>기존 순수 Javascript로 제작한 것과는 다르게 React와 Typescript를 사용하여 체계적으로 Component 및 State를 관리하고, 수정할 수 있도록 하였습니다.</p>
+        <p>Firebase(Authentication, Realtime Database) 서비스를 처음 사용해보았고, 최근 인기가 많은 TailwindCSS를 통해 유용성을 느낄 수 있었습니다. </p>
+        <h3>주요 기능</h3>
+        <p>
+          <li>기본 - Home</li>
+          <li>간단한 자기소개 및 깃헙/블로그 확인 - About</li>
+          <li>기술 스택 - Skills</li>
+          <li>진행한 프로젝트들 - Portfoliio</li>
+          <li>연락처 - Contact</li>
+        </p>
+    
+        <div class="links">
+          <a href="https://github.com/eeseohyun/Frontend"><i class="fa-brands fa-github"></i> Github</a>
+          <a href=""><i class="fa-solid fa-link"></i>Site</a>
+        </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="modal_wrapper DevBlock" id="#DevBlock">
+    <div class="modal">
+      <div class="modal_head" style="--clr:#2982b9;">
+        <a class="btn-close trigger" href="#">
+          <p aria-hidden="true">X</p></a>
+        <h1>DevBlock</h1>
+      </div>
+      <div class="image_slider">
+        <div class="images"></div>
+        <div class="thumbnails"></div>
+        <div class="back-btn">
+          〈
+        </div>
+        <div class="next-btn">
+          〉
+        </div>
+      </div>
+      <div class="modal_content">
+        <h3>개인 프로젝트 2023.10(1주)</h3>
+        <p>포트폴리오 용도로 제작한 웹사이트입니다. 지금 보고 있는 바로 이 웹사이트입니다. 프로필 및 개발 경험들을 나타내는 공간으로 저의 개발 경험 및 능력을 쌓아나간다는 의미로 블럭 컨셉으로 제작하였습니다.</p><br />
+        <p>순수 JavaScript와 CSS를 사용하여 제작하였고, Github page로 배포를 진행하였습니다. 각 페이지들을 제작하면서 사용자들이 재미있게 느낄 수 있도록 고안하였고 아이디어 부분에서 가장 설계가 오래걸렸습니다.</p><br/>
+        <p>아무래도 입체적인 블록을 구현하느라 개인적으로 개념이 부족하다 느꼈던 CSS를 다시금 공부해볼 수 있었습니다. 특히나 animation 효과들이나 추가적인 기능을 이해하고 응용해볼 수 있었습니다.</p><br/>
+        <h3>주요 기능</h3>
+        <p>
+          <li>간단한 자기소개 및 깃헙/블로그 확인</li>
+          <li>기술 스택</li>
+          <li>진행한 프로젝트들</li>
+          <li>연락처</li>
+        </p>
+        <br />
+        <div class="links">
+          <a href="https://github.com/eeseohyun/portfolio"><i class="fa-brands fa-github"></i> Github</a>
+          <a href=""><i class="fa-solid fa-link"></i>Site</a>
+        </div>
+    </div>
+    </div>
+  </div>
   <section class="#TWT"></section>
   <section class="#ToyBlock"></section>
 

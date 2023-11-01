@@ -56,8 +56,10 @@ matchElements.forEach((match, index) => {
   });
   match.addEventListener('click', (e) => {
     e.preventDefault();
-    modalElements.forEach((modal, index) => {
-      modal.classList.toggle('open');
+    modalElements.forEach((modal, modalIndex) => {
+      if (modalIndex === index) {
+        modal.classList.toggle('open');
+      }
     });
   });
 });

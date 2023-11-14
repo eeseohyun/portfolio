@@ -182,7 +182,7 @@ ul li:last-child::after {
 }
 
 .frontSide {
-  background-image: url('../img/user.jpeg');
+  background-image: url('img/user.jpeg');
   background-size: cover;
   background-position: center;
   transform: rotateY(0deg) translateZ(160px);

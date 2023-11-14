@@ -17,15 +17,23 @@ sectionLinks.forEach((link, index) => {
 
 // skills
 const skillsSorts = document.querySelectorAll('.skills_sort li');
-const skillList = document.querySelectorAll('.skills_lists');
+const skillLists = document.querySelectorAll('.skills_lists li');
+let activeSkillsList = null;
 skillsSorts.forEach((item) => {
   item.addEventListener('click', (e) => {
     e.preventDefault();
     const category = item.getAttribute('data-category');
+
     const selectedList = document.querySelector(`.skills_lists.${category}`);
+
+    if (activeSkillsList) {
+      activeSkillsList.classList.remove('active');
+    }
     if (selectedList) {
       selectedList.classList.toggle('active');
+      activeSkillsList = selectedList;
     }
+
     skillsSorts.forEach((sortItem) => {
       sortItem.classList.remove('clicked');
     });
@@ -35,12 +43,16 @@ skillsSorts.forEach((item) => {
 
 //클릭 스타일 리셋
 function resetSkills() {
-  skillList.forEach((list) => {
+  skillLists.forEach((list) => {
     list.classList.remove('clicked');
   });
   skillsSorts.forEach((sortItem) => {
     sortItem.classList.remove('clicked');
   });
+  if (activeSkillsList) {
+    activeSkillsList.classList.remove('active');
+    activeSkillsList = null;
+  }
 }
 
 const matches = document.querySelectorAll('.match');
